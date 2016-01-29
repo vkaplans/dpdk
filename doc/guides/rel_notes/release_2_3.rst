@@ -43,6 +43,10 @@ This section should contain new features added in this release. Sample format:
 
   Added virtual PMD that wraps librte_vhost.
 
+* **Added vhost-user live migration support.**
+
+  Added virtual PMD that wraps librte_vhost.
+
 
 Resolved Issues
 ---------------
