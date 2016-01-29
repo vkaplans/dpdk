@@ -40,6 +40,7 @@
  */
 
 #include <stdint.h>
+#include <linux/vhost.h>
 #include <linux/virtio_ring.h>
 #include <linux/virtio_net.h>
 #include <sys/eventfd.h>
@@ -204,6 +205,7 @@ gpa_to_vva(struct virtio_net *dev, uint64_t guest_pa)
 	}
 	return vhost_va;
 }
+
 
 /**
  *  Disable features in feature_mask. Returns 0 on success.
