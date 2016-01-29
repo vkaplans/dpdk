@@ -91,7 +91,8 @@ struct vhost_virtqueue {
 	int			callfd;			/**< Used to notify the guest (trigger interrupt). */
 	int			kickfd;			/**< Currently unused as polling mode is enabled. */
 	int			enabled;
-	uint64_t		reserved[16];		/**< Reserve some spaces for future extension. */
+	uint64_t		log_guest_addr;		/**< Physical address of used ring, for logging */
+	uint64_t		reserved[15];		/**< Reserve some spaces for future extension. */
 	struct buf_vector	buf_vec[BUF_VECTOR_MAX];	/**< for scatter RX. */
 } __rte_cache_aligned;
 
