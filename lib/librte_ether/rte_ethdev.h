@@ -2661,6 +2661,8 @@ rte_eth_tx_burst(uint8_t port_id, uint16_t queue_id,
 enum rte_eth_event_type {
 	RTE_ETH_EVENT_UNKNOWN,  /**< unknown event type */
 	RTE_ETH_EVENT_INTR_LSC, /**< lsc interrupt event */
+	RTE_ETH_EVENT_QUEUE_STATE_CHANGE,
+				/**< queue state changed interrupt */
 	RTE_ETH_EVENT_MAX       /**< max value of this enum */
 };
 
