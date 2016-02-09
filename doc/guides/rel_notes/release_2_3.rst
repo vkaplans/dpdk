@@ -39,6 +39,10 @@ This section should contain new features added in this release. Sample format:
 
   Enabled virtio 1.0 support for virtio pmd driver.
 
+* **Added vhost PMD.**
+
+  Added virtual PMD that wraps librte_vhost.
+
 
 Resolved Issues
 ---------------
